@@ -1,100 +1,37 @@
-# Welcome to React Router!
+# 学習記録
 
-A modern, production-ready template for building full-stack React applications using React Router.
+このプロジェクトでは、以下のリソースを参考にして学習を進めました。
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 参考にしたリソース
 
-## Features
+- [router-article-app (GitHub)](https://github.com/jinwatanabe/router-article-app)
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+  - React Router を活用したアプリケーションの実装例として大変参考になりました。
+  - 特にルーティングの設計やパラメータ管理の方法について学ぶことができました。
 
-## Getting Started
+- [Qiita 記事: React Router を利用したアプリ開発の基礎](https://qiita.com/Sicut_study/items/7dc1b0cdcc1bee210f05)
+  - React Router の基本的な使い方や、ルーティングを実装する際の考え方を丁寧に解説している記事です。
+  - 具体的なコード例が掲載されており、実際のプロジェクトでどのように活用するかイメージが湧きやすくなりました。
 
-### Installation
+## 学習内容
 
-Install the dependencies:
+- **React Router の基礎**
 
-```bash
-npm install
-```
+  - `BrowserRouter`や`Routes`、`Route`を用いたルーティングの実装方法。
+  - 動的なパラメータの取得方法（`useParams`）。
 
-### Development
+- **アプリケーションの構成**
 
-Start the development server with HMR:
+  - ルーティングに基づいたコンポーネント設計。
+  - URL の構造と React コンポーネントの役割分担。
 
-```bash
-npm run dev
-```
+- **状態管理との連携**
+  - URL パラメータを用いた状態管理とコンポーネント間のデータ連携。
+  - `useNavigate`を利用したプログラムによる遷移の実装。
 
-Your application will be available at `http://localhost:5173`.
+## 今後の展望
 
-## Building for Production
+- さらに複雑なルーティングが必要なプロジェクトへの応用を目指して、`React Router`の高度な機能（例: Nested Routes, Lazy Loading）を学習予定。
+- 状態管理ライブラリ（Redux や React Context）とのより高度な組み合わせを試していきたいと考えています。
 
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+学習の詳細や成果物はこのリポジトリ内で随時更新していきます。
