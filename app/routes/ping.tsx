@@ -2,7 +2,7 @@ export default function Ping() {
   return (
     <div>
       <div className="flex sm:ml-64">
-        <h1>記事一覧</h1>
+        <h1>ping</h1>
       </div>
     </div>
   );
